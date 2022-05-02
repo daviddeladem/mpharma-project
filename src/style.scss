@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-    font-family: Noto Sans, Helvetica, sans-serif;
+    background: #fff;
+    font-family:'Rubik', Helvetica, sans-serif;
     color: #666;
     letter-spacing: 1px;
     padding: 10px;
@@ -22,7 +22,7 @@ header {
             padding: 5px 10px;
             font-weight: 100;
             margin: 1rem;
-            color: #fff;
+            color: rgb(56, 54, 54);
             text-decoration: none;
             text-transform: uppercase;
             border-bottom: 2px solid transparent;
@@ -39,15 +39,12 @@ header {
 
         .link:hover,
         .link:active {
-            border-bottom: 2px solid #fff;
+            border-bottom: 2px solid rgb(12, 4, 80);
         }
     }
 }
 
 h1 {
-    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
-        -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606,
-        0 -80px 70px #973716, 10px -90px 80px #451b0e;
     display: inline-block;
 }
 
@@ -71,23 +68,23 @@ h2 {
     margin-bottom: 50px;
 }
 
-.book-list {
+.product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.book {
+.product {
     margin: 10px;
     width: 288px;
     overflow: hidden;
 
-    .book-title {
+    .product-title {
         font-weight: bold;
     }
 
-    .book-details {
+    .product-details {
         margin-bottom: 1rem;
 
         &>div {
