@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import _ from 'lodash';
 import Product from './Product';
 import ProductsContext from '../context/ProductsContext';
+import Products from './Products';
 
 const ProductsList = () => {
   const { products, setProducts } = useContext(ProductsContext);
@@ -12,6 +13,7 @@ const ProductsList = () => {
 
   return (
     <React.Fragment>
+      <Products />
       <div className="product-list">
         {!_.isEmpty(products) ? (
           products.map((product) => (
@@ -21,6 +23,7 @@ const ProductsList = () => {
           <p className="message">No products available. Please add some products.</p>
         )}
       </div>
+     
     </React.Fragment>
   );
 };
